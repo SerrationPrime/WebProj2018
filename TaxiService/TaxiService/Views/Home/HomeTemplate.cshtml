@@ -1,0 +1,87 @@
+﻿@{
+    Layout = "";
+}
+@Styles.Render("~/Content/css")
+<style>
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+    }
+</style>
+
+<body>
+    <h1>Home</h1>
+    <div class="row">
+        <div class="column" ng-controller="RegFormController">
+            <h3>Registracija</h3>
+            <form ng-submit="processForm()">
+                <p>
+                    Korisničko ime<br />
+                    <input type="text" id="username" ng-model="formData.username" required>
+                </p>
+                <p>
+                    Lozinka<br />
+                    <input type="password" id="password" ng-model="formData.password" required>
+                </p>
+                <p>
+                    Potvrda lozinke<br />
+                    <input type="password" id="confirmPassword" ng-model="formData.passwordConfirm" required>
+                </p>
+                <p>
+                    Ime<br />
+                    <input type="text" id="ime" ng-model="formData.ime" required>
+                </p>
+                <p>
+                    Prezime<br />
+                    <input type="text" id="prezime" ng-model="formData.prezime" required>
+                </p>
+                <p>
+                    JMBG<br />
+                    <input type="text" id="jmbg" ng-model="formData.jmbg" required>
+                </p>
+                <p>
+                    Pol<br />
+                    <select name="pol" id="pol" ng-model="formData.pol" required>
+                        <option value="m" selected="selected">Muško</option>
+                        <option value="f">Žensko</option>
+                    </select>
+                </p>
+                <p>
+                    Telefon<br />
+                    <input type="tel" id="telefon" ng-model="formData.telefon" required>
+                </p>
+                <p>
+                    Email<br />
+                    <input type="email" id="email" ng-model="formData.email" required>
+                </p>
+                <p>
+                    <button type="submit">Registracija</button>
+                </p>
+            </form>
+
+            <p>
+                {{ errorName }}
+            </p>
+            <pre>
+                {{formData}}
+            </pre>
+        </div>
+        <div class="column">
+            <h3>Već ste korisnik? Ulogujte se</h3>
+            <p>
+                Korisničko ime<br />
+                <input type="text" id="username" required>
+            </p>
+            <p>
+                Lozinka<br />
+                <input type="password" id="password" required>
+            </p>
+            <p>
+                <input type="submit" id="login" value="Login">
+            </p>
+        </div>
+    </div>
+</body>

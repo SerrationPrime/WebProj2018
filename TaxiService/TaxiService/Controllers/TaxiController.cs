@@ -15,10 +15,6 @@ namespace TaxiService.Controllers
 
         public async Task<IHttpActionResult> Post(Korisnik korisnik)
         {
-            if (!ModelState.IsValid)
-            {
-                return this.BadRequest(this.ModelState);
-            }
 
             if (!TekstSkladiste.Upisi(korisnik))
             {

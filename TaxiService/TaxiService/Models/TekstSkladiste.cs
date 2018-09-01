@@ -43,15 +43,17 @@ namespace TaxiService.Models
         static bool Postoji(string token, string vrednost, string file)
         {
 
-            using (JsonTextReader reader = new JsonTextReader(File.OpenText(file)))
-            {
-                reader.Read();
-                if (reader.TokenType.ToString()==token && (string)reader.Value == vrednost)
+            if (File.Exists(file)) {
+                using (JsonTextReader reader = new JsonTextReader(File.OpenText(file)))
                 {
-                    return true;
+                    reader.Read();
+                    if (reader.TokenType.ToString() == token && (string)reader.Value == vrednost)
+                    {
+                        return true;
+                    }
                 }
             }
-            return true;
+            return false;
 
             //return File.ReadAllLines(file).Contains("\"" + atribut + "\"" + ": " + vrednost);
         }
