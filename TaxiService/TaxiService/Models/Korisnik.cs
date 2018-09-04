@@ -21,5 +21,39 @@ namespace TaxiService.Models
         //Usled upotrebe nasleđivanja, ovo polje se suvišno, ali je zahtevano u specifikaciji
         public string Uloga { get; set; }
         public List<String> IDVoznje;
+
+        public Korisnik()
+        {
+
+        }
+
+        protected Korisnik(Korisnik korisnik)
+        {
+            Username = korisnik.Username;
+            Password = korisnik.Password;
+            Ime = korisnik.Ime;
+            Prezime = korisnik.Prezime;
+            Pol = korisnik.Pol;
+            JMBG = korisnik.JMBG;
+            Telefon = korisnik.Telefon;
+            Email = korisnik.Email;
+            Uloga = korisnik.Uloga;
+            IDVoznje = korisnik.IDVoznje;
+        }
+
+        public bool Valid()
+        {
+            if (String.IsNullOrEmpty(Username) || String.IsNullOrEmpty(Password) || String.IsNullOrEmpty(Ime) || String.IsNullOrEmpty(Prezime)
+                || String.IsNullOrEmpty(JMBG) || String.IsNullOrEmpty(Telefon) || String.IsNullOrEmpty(Email)
+                || String.IsNullOrEmpty(Uloga))
+            {
+                return false;
+            }
+            if (JMBG.Length != 13 || !System.Text.RegularExpressions.Regex.IsMatch(JMBG, @"\d"))
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

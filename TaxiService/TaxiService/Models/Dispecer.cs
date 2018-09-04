@@ -7,6 +7,11 @@ namespace TaxiService.Models
 {
     public class Dispecer : Korisnik
     {
+        public Dispecer(Korisnik korisnik) : base(korisnik)
+        {
+
+        }
+
         public Lokacija Lokacija { get; set; }
     }
 }

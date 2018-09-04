@@ -45,8 +45,8 @@
                 <p>
                     Pol<br />
                     <select name="pol" id="pol" ng-model="formData.pol" required>
-                        <option value="m" selected="selected">Muško</option>
-                        <option value="f">Žensko</option>
+                        <option value="0" selected="selected">Muško</option>
+                        <option value="1">Žensko</option>
                     </select>
                 </p>
                 <p>
@@ -69,19 +69,27 @@
                 {{formData}}
             </pre>
         </div>
-        <div class="column">
+        <div class="column" ng-controller="LoginFormController">
             <h3>Već ste korisnik? Ulogujte se</h3>
+            <form ng-submit="login()">
+                <p>
+                    Korisničko ime<br />
+                    <input type="text" id="username" ng-model="loginData.username" required>
+                </p>
+                <p>
+                    Lozinka<br />
+                    <input type="password" id="password" ng-model="loginData.password" required>
+                </p>
+                <p>
+                    <button type="submit">Prijavite se</button>
+                </p>
+            </form>
             <p>
-                Korisničko ime<br />
-                <input type="text" id="username" required>
+                {{ errorName }}
             </p>
-            <p>
-                Lozinka<br />
-                <input type="password" id="password" required>
-            </p>
-            <p>
-                <input type="submit" id="login" value="Login">
-            </p>
+            <pre>
+                {{loginData}}
+            </pre>
         </div>
     </div>
 </body>

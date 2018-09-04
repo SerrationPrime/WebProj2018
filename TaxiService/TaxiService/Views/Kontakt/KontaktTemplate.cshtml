@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "";
+}
+@Styles.Render("~/Content/css")
+<head>
+    <style>
+        
+        #map {
+            height: 400px; 
+            width: 100%; 
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Telefon:
+    </h1>
+    <p>
+        064/333-3333
+    </p>
+    <p>
+        066/234-2222
+    </p>
+    <h1>
+        Email:
+    </h1>
+    <p>
+        <a href="mailto:taxico@taxico.org">Pošaljite ovde!</a>
+    </p>
+    <h1>
+        Naša lokacija:
+    </h1>
+    <div id="map">
+
+    </div>
+    <script>
+        function initMap() {
+            var loc = { lat: 45.248261, lng: 19.840185 };
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 15, center: loc });
+            var lov = new google.maps.Marker({ position: loc, map: map });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrjeABCsOwW1rhi7eW6_b_fWF8OK2HeiA&callback=initMap">
+    </script>
+</body>

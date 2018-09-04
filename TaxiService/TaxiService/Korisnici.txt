@@ -1,0 +1,1 @@
+{"IDVoznje":null,"Lokacija":null,"Username":"Harbinger","Password":"WeAreYourMakers","Ime":"Harbinger","Prezime":"Leviathan","Pol":0,"JMBG":"0101000111111","Telefon":"0","Email":"harbinger@outer.rim","Uloga":"Musterija"}

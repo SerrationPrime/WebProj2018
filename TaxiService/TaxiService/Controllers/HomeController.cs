@@ -11,11 +11,51 @@ namespace TaxiService.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Osnovna strana";
 
+            string sessionId;
+
+            try
+            {
+                sessionId = Request.Cookies["session-id"].Value;
+            }
+            catch
+            {
+                return View();
+            }
+            switch (LoginController.Autorizacija(sessionId))
+            {
+                case ("Musterija"):
+                    return Redirect("/Musterija");
+                default:
+                    break;
+            }
             return View();
         }
         public ActionResult HomeTemplate()
+        {
+            return View();
+        }
+
+        public ActionResult Musterija()
+        {
+            string sessionId;
+            try
+            {
+                sessionId = Request.Cookies["session-id"].Value;
+            }
+            catch
+            {
+                return Redirect("/");
+            }
+            if (LoginController.Autorizacija(sessionId) != "Musterija")
+            {
+                return Redirect("/");
+            }
+            return View("Index");
+        }
+
+        public ActionResult MusterijaTemplate()
         {
             return View();
         }
