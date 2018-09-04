@@ -1,0 +1,18 @@
+04-Sep-18 1:42:09 PM: Uspesan upis korisnika Hierophant.
+04-Sep-18 2:29:25 PM: Uspesan upis korisnika Harbinger.
+04-Sep-18 3:00:07 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
+04-Sep-18 3:00:07 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
+04-Sep-18 3:09:39 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
+04-Sep-18 3:09:44 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
+04-Sep-18 3:37:04 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
+04-Sep-18 3:37:04 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
+04-Sep-18 3:50:14 PM: Uspesan upis korisnika greenboi67.
+04-Sep-18 6:25:08 PM: Uspesan upis korisnika rr.
+04-Sep-18 8:51:45 PM: Uspesan upis korisnika Harbinger.
+04-Sep-18 11:17:05 PM: Korisnik Harbinger ulogovan.
+04-Sep-18 11:21:00 PM: Korisnik Harbinger ulogovan.
+04-Sep-18 11:22:56 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+04-Sep-18 11:23:00 PM: Korisnik Harbinger ulogovan.
+04-Sep-18 11:25:21 PM: Korisnik Harbinger ulogovan.
+04-Sep-18 11:42:37 PM: Korisnik Harbinger ulogovan.
+04-Sep-18 11:47:20 PM: Korisnik Harbinger ulogovan.
