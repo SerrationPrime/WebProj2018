@@ -9,7 +9,7 @@ namespace TaxiService.Models
     {
         public Vozac(Korisnik korisnik): base(korisnik)
         {
-
+            Lokacija = new Lokacija();
         }
 
         public Lokacija Lokacija { get; set; }

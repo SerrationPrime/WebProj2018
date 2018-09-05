@@ -194,13 +194,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Adresa.cs" />
     <Compile Include="Models\Automobil.cs" />
-    <Compile Include="Models\Dispecer.cs" />
+    <Compile Include="Models\CookiePomoc.cs" />
     <Compile Include="Models\Komentar.cs" />
     <Compile Include="Models\Lokacija.cs" />
     <Compile Include="Models\Korisnik.cs" />
-    <Compile Include="Models\Musterija.cs" />
     <Compile Include="Models\TekstSkladiste.cs" />
     <Compile Include="Models\Vozac.cs" />
     <Compile Include="Models\Voznja.cs" />
@@ -252,6 +250,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\app.js" />
+    <Content Include="Views\Home\DispecerTemplate.cshtml" />
     <None Include="Views\Home\HomeTemplate.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -271,6 +270,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Kontakt\KontaktTemplate.cshtml" />
     <Content Include="Views\Home\MusterijaTemplate.cshtml" />
+    <Content Include="Views\Home\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

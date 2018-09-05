@@ -20,11 +20,12 @@ namespace TaxiService.Models
         public string Email { get; set; }
         //Usled upotrebe nasleđivanja, ovo polje se suvišno, ali je zahtevano u specifikaciji
         public string Uloga { get; set; }
-        public List<String> IDVoznje;
+        public List<String> IDVoznje { get; set;}
+        public bool Blokiran { get; set; }
 
         public Korisnik()
         {
-
+            IDVoznje = new List<string>();
         }
 
         protected Korisnik(Korisnik korisnik)

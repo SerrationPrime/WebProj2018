@@ -10,7 +10,7 @@ using TaxiService.Models;
 
 namespace TaxiService.Controllers
 {
-    //Centralni kontroler, bavi se registracijom korisnika
+    //Kontroler za registraciju musterija
     public class TaxiController : ApiController
     {
         [HttpPost]
@@ -22,20 +22,8 @@ namespace TaxiService.Controllers
                 return this.BadRequest();
             }
             //dodati korisnik moze biti musterija ili vozac, potrebno je prebaciti korisnika u specificnu klasu
-
-            Korisnik RealniKorisnik;
-
-            if (korisnik.Uloga == "Musterija")
-            {
-                //??? Koristio bih abs klasu, ali se cudno ponasaju sa web api, ali ovo izgleda da radi?
-                RealniKorisnik = new Musterija(korisnik);
-            }
-            else
-            {
-                RealniKorisnik = new Vozac(korisnik);
-            }
             
-            string Rezultat = TekstSkladiste.Upisi(RealniKorisnik);
+            string Rezultat = TekstSkladiste.Upisi(korisnik);
             if (Rezultat == "ok")
             {
                 return this.Ok();

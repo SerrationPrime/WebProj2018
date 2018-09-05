@@ -9,6 +9,13 @@ namespace TaxiService.Models
     {
         public double Longitude { get; set; }
         public double Latitude { get; set; }
-        public Adresa Adresa { get; set; }
+        public string Adresa { get; set; }
+
+        public Lokacija()
+        {
+            Latitude = 0;
+            Longitude = 0;
+            Adresa = "";
+        }
     }
 }

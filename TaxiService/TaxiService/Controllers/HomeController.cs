@@ -39,6 +39,7 @@ namespace TaxiService.Controllers
 
         public ActionResult Musterija()
         {
+            //Kontrola potrebna u slucaju da neko ukuca URL direktno u adresu
             string sessionId;
             try
             {

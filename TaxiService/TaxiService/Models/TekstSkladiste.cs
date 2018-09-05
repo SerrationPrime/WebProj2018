@@ -84,14 +84,19 @@ namespace TaxiService.Models
             }
         }
 
-        public static string Autentikacija(string username, string password)
+        public static CookiePomoc Autentikacija(string username, string password)
         {
             string file = AppDomain.CurrentDomain.BaseDirectory;
             file += ConfigurationManager.AppSettings.Get("UserStorageName");
 
+            CookiePomoc retVal= new CookiePomoc();
+            retVal.Uloga = "Nepoznat";
+            retVal.Username = username;
+
             using (JsonTextReader reader = new JsonTextReader(File.OpenText(file)))
             {
                 reader.SupportMultipleContent = true;
+                
                 //Petlja 1: samo citaj
                 while (reader.Read())
                 {
@@ -114,13 +119,24 @@ namespace TaxiService.Models
                                     reader.Read();
                                 }
                                 reader.Read();
-                                //i na kraju vrati
-                                return reader.Value.ToString();
+                                retVal.Uloga = reader.Value.ToString();
+                                //I onda konacno proveri stanje blokranja
+                                while (reader.Value==null || reader.Value.ToString() != "Blokiran" || reader.TokenType.ToString() != "PropertyName")
+                                {
+                                    reader.Read();
+                                }
+                                reader.Read();
+                                retVal.Blokiran = Convert.ToBoolean(reader.Value.ToString());
+                                if (retVal.Blokiran)
+                                {
+                                    retVal.Uloga = "Blokiran";
+                                }
+                                return retVal;
                             }
                             //Korisnik postoji, ali lozinka nije dobra
                             else
                             {
-                                return "Nepoznat";
+                                return retVal;
                             }
                         }
                         //To nije korisnik, preskoci na sledećeg
@@ -136,7 +152,7 @@ namespace TaxiService.Models
                 }
             }
             //Korisnik nije na evidenciji
-            return "Nepoznat";
+            return retVal;
         }
     }
 }
