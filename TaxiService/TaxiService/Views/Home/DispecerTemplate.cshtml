@@ -2,7 +2,196 @@
     Layout = "";
 }
 @Styles.Render("~/Content/css")
-<body>
-    Placeholder
+
+<style>
+    #map {
+        height: 400px;
+    }
+    [ng-click],
+    [data-ng-click],
+    [x-ng-click] {
+        cursor: pointer;
+    }
+</style>
+
+
+<body ng-controller="DispControler">
+    <h1>Dobrodosli, dispeceru.</h1>
+
+    <button ng-click="vozacKreacija = !vozacKreacija">Kreirajte vozaca</button>
+    <div ng-show="vozacKreacija" ng-controller="VozFormController">
+        <form ng-submit="processForm()">
+            <p>
+                Korisničko ime<br />
+                <input type="text" id="username" ng-model="formData.username" required>
+            </p>
+            <p>
+                Lozinka<br />
+                <input type="password" id="password" ng-model="formData.password" required>
+            </p>
+            <p>
+                Potvrda lozinke<br />
+                <input type="password" id="confirmPassword" ng-model="formData.passwordConfirm" required>
+            </p>
+            <p>
+                Ime<br />
+                <input type="text" id="ime" ng-model="formData.ime" required>
+            </p>
+            <p>
+                Prezime<br />
+                <input type="text" id="prezime" ng-model="formData.prezime" required>
+            </p>
+            <p>
+                JMBG<br />
+                <input type="text" id="jmbg" ng-model="formData.jmbg" required>
+            </p>
+            <p>
+                Pol<br />
+                <select name="pol" id="pol" ng-model="formData.pol" required>
+                    <option value="0" selected="selected">Muško</option>
+                    <option value="1">Žensko</option>
+                </select>
+            </p>
+            <p>
+                Telefon<br />
+                <input type="tel" id="telefon" ng-model="formData.telefon" required>
+            </p>
+            <p>
+                Email<br />
+                <input type="email" id="email" ng-model="formData.email" required>
+            </p>
+            <p>
+                Broj vozila<br />
+                <input type="number" id="automobilBroj" ng-model="formData.automobilBroj" required>
+            </p>
+            <p>
+                <button type="submit">Registracija</button>
+            </p>
+            <p>
+                {{ errorName }}
+            </p>
+            <pre>
+                {{formData}}
+            </pre>
+        </form>
+    </div>
+    <button ng-click="voznjaKreacija = !voznjaKreacija">Kreirajte voznju</button>
+    <div ng-show="voznjaKreacija" ng-controller="PutFormController">
+        <form ng-submit="processForm()">
+            <p>
+                <div id="map"></div>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrjeABCsOwW1rhi7eW6_b_fWF8OK2HeiA&callback=initMap">
+                </script>
+            </p>
+            <p>
+                Odaberite lokaciju, pa unesite adresu<br />
+                <input type="text" id="adresa" ng-model="formData.lokacija.adresa" required>
+            </p>
+            <p>
+                <button type="button" ng-click="traziVozace()">Potvrdi adresu</button>
+            </p>
+            <p>
+                Željeni tip automobila<br />
+                <select id="zeljeniTip" ng-model="formData.zeljeniTip" required>
+                    <option value="1" selected="selected">Putnicki</option>
+                    <option value="2">Kombi</option>
+                </select>
+            </p>
+            <div ng-show="listaVozacaVidljiva">
+                <div class="input-group">
+                    <div><i class="fa fa-search"></i></div>
+                    <input type="text" placeholder="Nađite vozača" ng-model="search">
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>
+                                <a href="#" ng-click="sortType = 'username'; sortReverse = !sortReverse">
+                                    Vozac
+                                    <span ng-show="sortType == 'username' && !sortReverse"></span>
+                                    <span ng-show="sortType == 'username' && sortReverse"></span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" ng-click="sortType = 'distanca'; sortReverse = !sortReverse">
+                                    Udaljenost
+                                    <span ng-show="sortType == 'distanca' && !sortReverse"></span>
+                                    <span ng-show="sortType == 'distanca' && sortReverse"></span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" ng-click="sortType = 'vozilo'; sortReverse = !sortReverse">
+                                    Tip vozila
+                                    <span ng-show="sortType == 'vozilo' && !sortReverse"></span>
+                                    <span ng-show="sortType == 'vozilo' && sortReverse"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr ng-repeat="vozac in lista | orderBy:sortType:sortReverse | filter:search" ng-click="formData.vozacUsername=vozac.username">
+                            <td>{{ vozac.username }}</td>
+                            <td>{{ vozac.distanca | number : fractionSize }}</td>
+                            <td>{{ vozac.vozilo }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>{{stanjeVozaca}}</p>
+            </div>
+            <p>
+                Iznos<br />
+                <input type="number" step="0.01" id="iznos" ng-model="formData.iznos" required>
+            </p>
+            <p>
+                <button type="submit">Dodajte vožnju</button>
+            </p>
+            <p>
+                {{ errorName }}
+            </p>
+            <pre>
+            {{formData}}
+            </pre>
+        </form>
+    </div>
+    <button  ng-click="neobradjeneVoznje = !neobradjeneVoznje"></button>
+    <div ng-show="neobradjeneVoznje">
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <a href="#" ng-click="sortType = 'voznja'; sortReverse = !sortReverse">
+                            Vozac
+                            <span ng-show="sortType == 'username' && !sortReverse"></span>
+                            <span ng-show="sortType == 'username' && sortReverse"></span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" ng-click="sortType = 'distanca'; sortReverse = !sortReverse">
+                            Udaljenost
+                            <span ng-show="sortType == 'distanca' && !sortReverse"></span>
+                            <span ng-show="sortType == 'distanca' && sortReverse"></span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="#" ng-click="sortType = 'vozilo'; sortReverse = !sortReverse">
+                            Tip vozila
+                            <span ng-show="sortType == 'vozilo' && !sortReverse"></span>
+                            <span ng-show="sortType == 'vozilo' && sortReverse"></span>
+                        </a>
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="vozac in lista | orderBy:sortType:sortReverse | filter:search" ng-click="formData.vozacUsername=vozac.username">
+                    <td>{{ vozac.username }}</td>
+                    <td>{{ vozac.distanca | number : fractionSize }}</td>
+                    <td>{{ vozac.vozilo }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 

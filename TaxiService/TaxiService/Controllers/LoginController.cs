@@ -18,7 +18,7 @@ namespace TaxiService.Controllers
 
     public class LoginController : ApiController
     {
-        static Dictionary<string, CookiePomoc> ActiveSessions = new Dictionary<string, CookiePomoc>();
+        public static Dictionary<string, CookiePomoc> ActiveSessions = new Dictionary<string, CookiePomoc>();
 
         [HttpPost]
         public IHttpActionResult Post(UserPass credentials)

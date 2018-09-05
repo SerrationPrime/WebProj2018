@@ -9,3 +9,80 @@
 05-Sep-18 12:48:23 PM: Pokusan login sa nepravilnim podacima, username: Sovereign.
 05-Sep-18 12:48:27 PM: Pokusan login sa nepravilnim podacima, username: Sov.
 05-Sep-18 12:54:11 PM: Korisnik Sovereign ulogovan.
+05-Sep-18 1:05:17 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:07:01 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:08:01 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:47:32 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:50:36 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:55:04 PM: Pokusan login sa nepravilnim podacima, username: Sovereign.
+05-Sep-18 1:55:10 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:59:44 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:02:38 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:04:56 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:09:30 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:12:30 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:13:11 PM: Uspesan upis korisnika perun.
+05-Sep-18 2:15:02 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:15:55 PM: Uspesan upis korisnika perun.
+05-Sep-18 2:17:32 PM: Uspesan upis korisnika simeon.
+05-Sep-18 2:18:45 PM: Uspesan upis korisnika Sima.
+05-Sep-18 2:20:25 PM: Uspesan upis korisnika Sinisa.
+05-Sep-18 2:21:36 PM: Uspesan upis korisnika lozaVoza.
+05-Sep-18 2:23:18 PM: Uspesan upis korisnika Haruspex.
+05-Sep-18 3:52:35 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 3:54:55 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 3:56:23 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:07:25 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:12:01 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:15:22 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:16:16 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:17:22 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:19:53 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:26:37 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:33:36 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:36:25 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:37:16 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:38:31 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:39:51 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+05-Sep-18 4:39:59 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:41:23 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:56:34 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:59:51 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:35:01 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:36:13 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:36:57 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:43:33 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:48:42 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:51:25 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:53:48 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:56:29 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 6:49:22 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 6:51:26 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+05-Sep-18 6:51:29 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 6:53:14 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 6:59:52 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 7:05:52 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 7:09:50 PM: Pokusan login sa nepravilnim podacima, username: Xenotechie.
+05-Sep-18 7:09:56 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:08:51 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:10:28 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:14:22 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:16:33 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:19:43 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:22:45 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:24:26 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:27:09 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+05-Sep-18 8:27:14 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:30:29 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:32:05 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:36:24 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:44:18 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:49:19 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:56:05 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 9:28:45 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 9:31:49 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+05-Sep-18 9:31:58 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 9:32:22 PM: Neuspesan upis, greska: The process cannot access the file 'C:\Users\Milan\Documents\GitHub\WebProj2018\TaxiService\TaxiService\Voznje.txt' because it is being used by another process.
+05-Sep-18 9:32:22 PM: Uspesan upis voznje.
+05-Sep-18 10:08:23 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 10:09:16 PM: Uspesan upis korisnika ssss.

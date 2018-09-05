@@ -9,17 +9,21 @@ namespace TaxiService.Models
 
     public class Voznja
     {
-        public string ID { get; set; }
 
         public DateTime Vreme { get; set; }
         public Lokacija Lokacija { get; set; }
-        public string ZeljeniAutomobilBroj { get; set; }
+        public string ZeljeniTip { get; set; }
         public string MusterijaUsername { get; set; }
         public Lokacija Odrediste { get; set; }
         public string DispecerUsername { get; set;}
         public string VozacUsername { get; set; }
         public double Iznos { get; set; }
-        public string Komentar { get; set; }
+        public DateTime KomentarVreme { get; set; }
         public StatusVoznje Status { get; set; }
+
+        public Voznja()
+        {
+            Vreme = DateTime.Now;
+        }
     }
 }

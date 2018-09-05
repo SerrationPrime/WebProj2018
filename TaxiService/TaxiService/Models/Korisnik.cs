@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,7 @@ namespace TaxiService.Models
 
     public class Korisnik
     {
+        [JsonProperty(Order = -2)]
         public string Username { get; set; }
         //Svestan sam da bi lozinka trebala biti hešovana/soljena, ali to nije zahtevano u okviru zadatka
         public string Password { get; set; }

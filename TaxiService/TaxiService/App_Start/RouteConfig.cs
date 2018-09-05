@@ -18,6 +18,17 @@ namespace TaxiService
                 url: "Musterija",
                 defaults: new { controller = "Home", action = "Musterija" }
             );
+            routes.MapRoute(
+                name: "Dispecer",
+                url: "Dispecer",
+                defaults: new { controller = "Home", action = "Dispecer" }
+            );
+
+            routes.MapRoute(
+                name: "Vozac",
+                url: "Vozac",
+                defaults: new { controller = "Home", action = "Vozac" }
+            );
 
             routes.MapRoute(
                 name: "Default",

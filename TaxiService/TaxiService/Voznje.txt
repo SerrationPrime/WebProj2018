@@ -1,0 +1,1 @@
+{"ID":null,"Vreme":"2018-09-05T21:32:22.6990513+02:00","Lokacija":{"Longitude":19.844002558196962,"Latitude":45.254269231305756,"Adresa":"Katedrala"},"ZeljeniTip":"1","MusterijaUsername":null,"Odrediste":null,"DispecerUsername":"Harbinger","VozacUsername":"lozaVoza","Iznos":220.0,"KomentarVreme":"0001-01-01T00:00:00","Status":2}
