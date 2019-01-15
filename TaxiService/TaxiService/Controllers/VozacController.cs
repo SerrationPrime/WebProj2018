@@ -19,6 +19,7 @@ namespace TaxiService.Controllers
                 return this.BadRequest();
             }
 
+            vozac.Uloga = "Vozac";
             string Rezultat = TekstSkladiste.Upisi(vozac);
             if (Rezultat == "ok")
             {

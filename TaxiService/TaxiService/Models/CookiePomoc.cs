@@ -9,6 +9,5 @@ namespace TaxiService.Models
     {
             public string Username { get; set; }
             public string Uloga { get; set; }
-            public bool Blokiran { get; set; }
     }
 }

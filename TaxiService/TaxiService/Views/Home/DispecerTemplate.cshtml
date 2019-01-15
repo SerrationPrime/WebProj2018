@@ -15,7 +15,7 @@
 </style>
 
 
-<body ng-controller="DispControler">
+<body ng-controller="DispController">
     <h1>Dobrodosli, dispeceru.</h1>
 
     <button ng-click="vozacKreacija = !vozacKreacija">Kreirajte vozaca</button>
@@ -85,11 +85,14 @@
                 </script>
             </p>
             <p>
-                Odaberite lokaciju, pa unesite adresu<br />
-                <input type="text" id="adresa" ng-model="formData.lokacija.adresa" required>
+                Odaberite lokacije, pa unesite adresu<br />
+                <input type="text" id="adresa" ng-model="boxLoc" required>
             </p>
             <p>
-                <button type="button" ng-click="traziVozace()">Potvrdi adresu</button>
+                <button type="button" ng-click="zeljenaLokacija()">Destinacija</button>
+            </p>
+            <p>
+                <button type="button" ng-click="traziVozace()">Trenutna lokacija</button>
             </p>
             <p>
                 Željeni tip automobila<br />
@@ -155,43 +158,16 @@
             </pre>
         </form>
     </div>
-    <button  ng-click="neobradjeneVoznje = !neobradjeneVoznje"></button>
-    <div ng-show="neobradjeneVoznje">
-        <table>
-            <thead>
-                <tr>
-                    <td>
-                        <a href="#" ng-click="sortType = 'voznja'; sortReverse = !sortReverse">
-                            Vozac
-                            <span ng-show="sortType == 'username' && !sortReverse"></span>
-                            <span ng-show="sortType == 'username' && sortReverse"></span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" ng-click="sortType = 'distanca'; sortReverse = !sortReverse">
-                            Udaljenost
-                            <span ng-show="sortType == 'distanca' && !sortReverse"></span>
-                            <span ng-show="sortType == 'distanca' && sortReverse"></span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" ng-click="sortType = 'vozilo'; sortReverse = !sortReverse">
-                            Tip vozila
-                            <span ng-show="sortType == 'vozilo' && !sortReverse"></span>
-                            <span ng-show="sortType == 'vozilo' && sortReverse"></span>
-                        </a>
-                    </td>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr ng-repeat="vozac in lista | orderBy:sortType:sortReverse | filter:search" ng-click="formData.vozacUsername=vozac.username">
-                    <td>{{ vozac.username }}</td>
-                    <td>{{ vozac.distanca | number : fractionSize }}</td>
-                    <td>{{ vozac.vozilo }}</td>
-                </tr>
-            </tbody>
-        </table>
+    <button ng-click="neobradjeneVoznje = !neobradjeneVoznje"></button>
+    <button ng-click="blokada = !blokada">Blokiranje korisnika</button>
+    <div ng-show="blokada" ng-controller="BlockFormController">
+        <p>
+            <input type="text" id="adresa" ng-model="username" required>
+        </p>
+        <p>
+            <button type="submit" ng-click="flipBlock()">Blokiraj/Odblokiraj</button>
+        </p>
+        {{errorName}}
     </div>
 </body>
 

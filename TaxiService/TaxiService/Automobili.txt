@@ -1,6 +1,8 @@
-{"VozacUsername":"perun","Godiste":"1998","Registracija":"NS 555-AA","TaksiBroj":"1","Tip":1}
-{"VozacUsername":"simeon","Godiste":"2003","Registracija":"NS 332-AR","TaksiBroj":"2","Tip":2}
-{"VozacUsername":"Sima","Godiste":"2007","Registracija":"NS 337-KT","TaksiBroj":"3","Tip":2}
-{"VozacUsername":"Sinisa","Godiste":"1998","Registracija":"NS 120-MF","TaksiBroj":"4","Tip":1}
-{"VozacUsername":"lozaVoza","Godiste":"1995","Registracija":"NS 570-LS","TaksiBroj":"5","Tip":1}
-{"VozacUsername":"Haruspex","Godiste":"2277","Registracija":"AA 555-AA","TaksiBroj":"6","Tip":1}
+{"perun":
+{"VozacUsername":"perun","Godiste":"1998","Registracija":"NS 555-AA","TaksiBroj":"1","Tip":1},"simeon":
+{"VozacUsername":"simeon","Godiste":"2003","Registracija":"NS 332-AR","TaksiBroj":"2","Tip":2},"Sima":
+{"VozacUsername":"Sima","Godiste":"2007","Registracija":"NS 337-KT","TaksiBroj":"3","Tip":2},"Sinisa":
+{"VozacUsername":"Sinisa","Godiste":"1998","Registracija":"NS 120-MF","TaksiBroj":"4","Tip":1},"lozaVoza":
+{"VozacUsername":"lozaVoza","Godiste":"1995","Registracija":"NS 570-LS","TaksiBroj":"5","Tip":1},"Haruspex":
+{"VozacUsername":"Haruspex","Godiste":"2277","Registracija":"AA 555-AA","TaksiBroj":"6","Tip":1},"TimTam":
+{"VozacUsername":"TimTam","Godiste":"2053","Registracija":"AA 555-BB","TaksiBroj":"7","Tip":1}}

@@ -27,7 +27,7 @@ namespace TaxiService.Controllers
             var RandVal = rnd.Next(0, int.MaxValue).ToString();
             var Resp = new HttpResponseMessage();
 
-            var Podaci = TekstSkladiste.Autentikacija(credentials.Username, credentials.Password);
+            var Podaci = TekstSkladiste. Autentikacija(credentials.Username, credentials.Password);
 
             switch (Podaci.Uloga) {
                 case ("Blokiran"):

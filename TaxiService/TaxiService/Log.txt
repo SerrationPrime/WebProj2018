@@ -86,3 +86,52 @@
 05-Sep-18 9:32:22 PM: Uspesan upis voznje.
 05-Sep-18 10:08:23 PM: Korisnik Harbinger ulogovan.
 05-Sep-18 10:09:16 PM: Uspesan upis korisnika ssss.
+14-Jan-19 1:28:40 AM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+14-Jan-19 1:28:57 AM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+14-Jan-19 1:30:11 AM: Korisnik Harbinger ulogovan.
+14-Jan-19 1:31:02 AM: Uspesan upis voznje.
+15-Jan-19 8:30:43 PM: Uspesan upis korisnika TestUser.
+15-Jan-19 8:31:46 PM: Uspesan upis korisnika Maro.
+15-Jan-19 8:32:37 PM: Pokusan upis korisnika, ali korisnicko ime Maro vec postoji.
+15-Jan-19 8:47:39 PM: Uspesan upis korisnika checkers.
+15-Jan-19 8:50:57 PM: Korisnik Maro ulogovan.
+15-Jan-19 8:51:03 PM: Korisnik Maro ulogovan.
+15-Jan-19 9:00:37 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:02:53 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:03:26 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:07:29 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:11:36 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:14:12 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:14:55 PM: Neuspesan upis, greska: Empty path name is not legal.
+15-Jan-19 9:17:28 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:18:03 PM: Uspesan upis korisnika perun.
+15-Jan-19 9:19:00 PM: Uspesan upis korisnika simeon.
+15-Jan-19 9:19:55 PM: Uspesan upis korisnika Sima.
+15-Jan-19 9:20:44 PM: Uspesan upis korisnika Sinisa.
+15-Jan-19 9:21:24 PM: Uspesan upis korisnika lozaVoza.
+15-Jan-19 9:22:08 PM: Uspesan upis korisnika Haruspex.
+15-Jan-19 9:22:58 PM: Uspesan upis korisnika TimTam.
+15-Jan-19 9:28:20 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:42:17 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:49:19 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:53:49 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:54:21 PM: Neuspesan upis, greska: Could not convert string 'perun' to dictionary key type 'System.DateTime'. Create a TypeConverter to convert from the string to the key type object. Path 'perun', line 1, position 9.
+15-Jan-19 9:55:31 PM: Uspesan upis voznje.
+15-Jan-19 10:12:25 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:14:48 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:24:45 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:26:23 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:27:56 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:34:59 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:36:16 PM: Uspesan upis voznje.
+15-Jan-19 10:38:44 PM: Uspesan upis voznje.
+15-Jan-19 11:26:49 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 11:29:33 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 11:39:07 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 11:39:55 PM: Pokusan login sa nepravilnim podacima, username: Hardz.
+15-Jan-19 11:40:03 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+15-Jan-19 11:40:11 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 11:51:15 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 11:59:38 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+15-Jan-19 11:59:41 PM: Korisnik Harbinger ulogovan.
+16-Jan-19 12:07:02 AM: Korisnik Harbinger ulogovan.

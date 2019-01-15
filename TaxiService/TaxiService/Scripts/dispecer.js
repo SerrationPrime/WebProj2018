@@ -96,10 +96,25 @@ app.controller('PutFormController', function ($scope, $http) {
     $scope.formData = {};
     $scope.listaVozacaVidljiva = false;
     $scope.lista = [];
+    $scope.formData.lokacija = {};
+    $scope.formData.odrediste = {};
+    $scope.formData.lokacija.latitude = 360;
+    $scope.formData.lokacija.longitude = 360;
+    $scope.formData.lokacija.adresa = "";
+    $scope.formData.odrediste.latitude = 360;
+    $scope.formData.odrediste.longitude = 360;
+    $scope.formData.odrediste.adresa = "";
+
+    $scope.zeljenaLokacija = function () {
+        $scope.formData.odrediste.latitude = latitude;
+        $scope.formData.odrediste.longitude = longitude;
+        $scope.formData.odrediste.adresa = $scope.boxLoc;
+    }
 
     $scope.traziVozace = function () {
         $scope.formData.lokacija.latitude = latitude;
         $scope.formData.lokacija.longitude = longitude;
+        $scope.formData.lokacija.adresa = $scope.boxLoc;
 
         $http({
             url: "api/Vozac",
@@ -117,14 +132,20 @@ app.controller('PutFormController', function ($scope, $http) {
             else {
                 $scope.stanjeVozaca = "";
             }
-            });
-      
+        });
+
     };
 
     $scope.processForm = function () {
         $scope.errorName = "";
         if (!($scope.formData.hasOwnProperty("vozacUsername"))) {
             $scope.errorName = "Niste odabrali vozaca.";
+        }
+        if ($scope.formData.lokacija.adresa === "" || $scope.formData.odrediste.adresa === "") {
+            $scope.errorName = "Niste uneli jednu od adresa.";
+        }
+        if ($scope.formData.lokacija.latitude === 360 || $scope.formData.odrediste.latitude === 360) {
+            $scope.errorName = "Niste oznacili jednu od adresa na mapi";
         }
         if ($scope.errorName === "") {
             $http({
@@ -137,6 +158,26 @@ app.controller('PutFormController', function ($scope, $http) {
             }, function errorCallback(response) {
                 $scope.errorName = "Neuspesna registracija, greska " + status;
                 });
+        }
+    };
+});
+
+app.controller('BlockFormController', function ($scope, $http) {
+    $scope.flipBlock = function () {
+        if ($scope.username === "") {
+            $scope.errorName = "Niste uneli korisnicko ime.";
+        }
+        else {
+            $http({
+                method: 'POST',
+                url: 'api/Control/',
+                data: $scope.username,
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+            }).then(function successCallback(response) {
+                $scope.errorName = "Korisnik uspesno blokiran/odblokiran!";
+            }, function errorCallback(response) {
+                $scope.errorName = "Korisnik ne postoji, ili postoji problem na serveru.";
+            });
         }
     };
 });
