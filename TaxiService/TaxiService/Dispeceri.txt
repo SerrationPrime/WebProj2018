@@ -1,0 +1,1 @@
+{"Harbinger":{"Username":"Harbinger","Password":"WeAreYourMakers","Ime":"Harbinger","Prezime":"Reaper","Pol":0,"JMBG":"1111111111111","Telefon":"11111111","Email":"harbinger@outer.rim","Uloga":"Dispecer","IDVoznje":[],"Blokiran":false}}

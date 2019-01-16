@@ -19,6 +19,14 @@ app.config(function ($routeProvider) {
             templateUrl: 'Home/MusterijaTemplate',
         })
 
+        .when('/Dispecer', {
+            templateUrl: 'Home/DispecerTemplate',
+        })
+
+        .when('/Vozac', {
+            templateUrl: 'Home/VozacTemplate',
+        })
+
         .otherwise({ redirectTo: '/' });
 });
 
@@ -36,6 +44,7 @@ app.controller('RegFormController', function ($scope, $http) {
 
         if ($scope.errorName === "") {
             delete $scope.formData.passwordConfirm;
+            $scope.formData.idvoznje = [];
             $scope.formData.uloga = "Musterija";
 
             $http({
@@ -60,7 +69,7 @@ app.controller('RegFormController', function ($scope, $http) {
 app.controller('LoginFormController', function ($scope, $http) {
     $scope.loginData = {};
 
-    $scope.login = function(){
+    $scope.login = function () {
         $http({
             method: 'POST',
             url: 'api/Login/',
@@ -68,13 +77,17 @@ app.controller('LoginFormController', function ($scope, $http) {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
         }).then(function successCallback(response) {
             $scope.errorName = "Login uspešan!";
+            location.reload(true);
         }, function errorCallback(response) {
             if (response.status === 401) {
                 $scope.errorName = "Nepravilni podaci, probajte ponovo";
+            }
+            else if (response.status === 403) {
+                $scope.errorName = "Blokirani ste, i ne mozete korisiti ovaj web sajt.";
             }
             else {
                 $scope.errorName = "Neuspesna prijava, greska " + status;
             }
         });
-    }
+    };
 });

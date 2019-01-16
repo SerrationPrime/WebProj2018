@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,7 @@ namespace TaxiService.Models
 
     public class Korisnik
     {
+        [JsonProperty(Order = -2)]
         public string Username { get; set; }
         //Svestan sam da bi lozinka trebala biti hešovana/soljena, ali to nije zahtevano u okviru zadatka
         public string Password { get; set; }
@@ -20,11 +22,12 @@ namespace TaxiService.Models
         public string Email { get; set; }
         //Usled upotrebe nasleđivanja, ovo polje se suvišno, ali je zahtevano u specifikaciji
         public string Uloga { get; set; }
-        public List<String> IDVoznje;
+        public List<String> IDVoznje { get; set;}
+        public bool Blokiran { get; set; }
 
         public Korisnik()
         {
-
+            IDVoznje = new List<string>();
         }
 
         protected Korisnik(Korisnik korisnik)

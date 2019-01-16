@@ -1,18 +1,215 @@
-04-Sep-18 1:42:09 PM: Uspesan upis korisnika Hierophant.
-04-Sep-18 2:29:25 PM: Uspesan upis korisnika Harbinger.
-04-Sep-18 3:00:07 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
-04-Sep-18 3:00:07 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
-04-Sep-18 3:09:39 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
-04-Sep-18 3:09:44 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
-04-Sep-18 3:37:04 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
-04-Sep-18 3:37:04 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
-04-Sep-18 3:50:14 PM: Uspesan upis korisnika greenboi67.
-04-Sep-18 6:25:08 PM: Uspesan upis korisnika rr.
-04-Sep-18 8:51:45 PM: Uspesan upis korisnika Harbinger.
-04-Sep-18 11:17:05 PM: Korisnik Harbinger ulogovan.
-04-Sep-18 11:21:00 PM: Korisnik Harbinger ulogovan.
-04-Sep-18 11:22:56 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
-04-Sep-18 11:23:00 PM: Korisnik Harbinger ulogovan.
-04-Sep-18 11:25:21 PM: Korisnik Harbinger ulogovan.
-04-Sep-18 11:42:37 PM: Korisnik Harbinger ulogovan.
-04-Sep-18 11:47:20 PM: Korisnik Harbinger ulogovan.
+
+05-Sep-18 12:15:19 PM: Uspesan upis korisnika Harbinger.
+05-Sep-18 12:17:11 PM: Uspesan upis korisnika Harbinger.
+05-Sep-18 12:18:56 PM: Pokusan upis korisnika, ali korisnicko ime Harbinger vec postoji.
+05-Sep-18 12:19:29 PM: Uspesan upis korisnika Harbinger.
+05-Sep-18 12:21:31 PM: Uspesan upis korisnika Sovereign.
+05-Sep-18 12:22:38 PM: Pokusan login sa nepravilnim podacima, username: Sovereign.
+05-Sep-18 12:22:44 PM: Korisnik Sovereign ulogovan.
+05-Sep-18 12:48:23 PM: Pokusan login sa nepravilnim podacima, username: Sovereign.
+05-Sep-18 12:48:27 PM: Pokusan login sa nepravilnim podacima, username: Sov.
+05-Sep-18 12:54:11 PM: Korisnik Sovereign ulogovan.
+05-Sep-18 1:05:17 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:07:01 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:08:01 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:47:32 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:50:36 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:55:04 PM: Pokusan login sa nepravilnim podacima, username: Sovereign.
+05-Sep-18 1:55:10 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 1:59:44 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:02:38 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:04:56 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:09:30 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:12:30 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:13:11 PM: Uspesan upis korisnika perun.
+05-Sep-18 2:15:02 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 2:15:55 PM: Uspesan upis korisnika perun.
+05-Sep-18 2:17:32 PM: Uspesan upis korisnika simeon.
+05-Sep-18 2:18:45 PM: Uspesan upis korisnika Sima.
+05-Sep-18 2:20:25 PM: Uspesan upis korisnika Sinisa.
+05-Sep-18 2:21:36 PM: Uspesan upis korisnika lozaVoza.
+05-Sep-18 2:23:18 PM: Uspesan upis korisnika Haruspex.
+05-Sep-18 3:52:35 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 3:54:55 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 3:56:23 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:07:25 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:12:01 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:15:22 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:16:16 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:17:22 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:19:53 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:26:37 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:33:36 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:36:25 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:37:16 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:38:31 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:39:51 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+05-Sep-18 4:39:59 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:41:23 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:56:34 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 4:59:51 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:35:01 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:36:13 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:36:57 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:43:33 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:48:42 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:51:25 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:53:48 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 5:56:29 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 6:49:22 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 6:51:26 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+05-Sep-18 6:51:29 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 6:53:14 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 6:59:52 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 7:05:52 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 7:09:50 PM: Pokusan login sa nepravilnim podacima, username: Xenotechie.
+05-Sep-18 7:09:56 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:08:51 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:10:28 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:14:22 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:16:33 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:19:43 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:22:45 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:24:26 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:27:09 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+05-Sep-18 8:27:14 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:30:29 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:32:05 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:36:24 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:44:18 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:49:19 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 8:56:05 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 9:28:45 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 9:31:49 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+05-Sep-18 9:31:58 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 9:32:22 PM: Neuspesan upis, greska: The process cannot access the file 'C:\Users\Milan\Documents\GitHub\WebProj2018\TaxiService\TaxiService\Voznje.txt' because it is being used by another process.
+05-Sep-18 9:32:22 PM: Uspesan upis voznje.
+05-Sep-18 10:08:23 PM: Korisnik Harbinger ulogovan.
+05-Sep-18 10:09:16 PM: Uspesan upis korisnika ssss.
+14-Jan-19 1:28:40 AM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+14-Jan-19 1:28:57 AM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+14-Jan-19 1:30:11 AM: Korisnik Harbinger ulogovan.
+14-Jan-19 1:31:02 AM: Uspesan upis voznje.
+15-Jan-19 8:30:43 PM: Uspesan upis korisnika TestUser.
+15-Jan-19 8:31:46 PM: Uspesan upis korisnika Maro.
+15-Jan-19 8:32:37 PM: Pokusan upis korisnika, ali korisnicko ime Maro vec postoji.
+15-Jan-19 8:47:39 PM: Uspesan upis korisnika checkers.
+15-Jan-19 8:50:57 PM: Korisnik Maro ulogovan.
+15-Jan-19 8:51:03 PM: Korisnik Maro ulogovan.
+15-Jan-19 9:00:37 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:02:53 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:03:26 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:07:29 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:11:36 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:14:12 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:14:55 PM: Neuspesan upis, greska: Empty path name is not legal.
+15-Jan-19 9:17:28 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:18:03 PM: Uspesan upis korisnika perun.
+15-Jan-19 9:19:00 PM: Uspesan upis korisnika simeon.
+15-Jan-19 9:19:55 PM: Uspesan upis korisnika Sima.
+15-Jan-19 9:20:44 PM: Uspesan upis korisnika Sinisa.
+15-Jan-19 9:21:24 PM: Uspesan upis korisnika lozaVoza.
+15-Jan-19 9:22:08 PM: Uspesan upis korisnika Haruspex.
+15-Jan-19 9:22:58 PM: Uspesan upis korisnika TimTam.
+15-Jan-19 9:28:20 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:42:17 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:49:19 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:53:49 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 9:54:21 PM: Neuspesan upis, greska: Could not convert string 'perun' to dictionary key type 'System.DateTime'. Create a TypeConverter to convert from the string to the key type object. Path 'perun', line 1, position 9.
+15-Jan-19 9:55:31 PM: Uspesan upis voznje.
+15-Jan-19 10:12:25 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:14:48 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:24:45 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:26:23 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:27:56 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:34:59 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 10:36:16 PM: Uspesan upis voznje.
+15-Jan-19 10:38:44 PM: Uspesan upis voznje.
+15-Jan-19 11:26:49 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 11:29:33 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 11:39:07 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 11:39:55 PM: Pokusan login sa nepravilnim podacima, username: Hardz.
+15-Jan-19 11:40:03 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+15-Jan-19 11:40:11 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 11:51:15 PM: Korisnik Harbinger ulogovan.
+15-Jan-19 11:59:38 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+15-Jan-19 11:59:41 PM: Korisnik Harbinger ulogovan.
+16-Jan-19 12:07:02 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 12:38:13 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 12:39:44 AM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+16-Jan-19 12:39:46 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:15:05 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:16:57 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:19:49 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:36:07 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:40:16 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:43:13 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 2:15:19 AM: Korisnik perun ulogovan.
+16-Jan-19 2:17:35 AM: Korisnik perun ulogovan.
+16-Jan-19 2:19:52 AM: Korisnik perun ulogovan.
+16-Jan-19 2:22:58 AM: Korisnik perun ulogovan.
+16-Jan-19 2:24:10 AM: Korisnik perun ulogovan.
+16-Jan-19 2:26:39 AM: Korisnik perun ulogovan.
+16-Jan-19 2:54:25 AM: Korisnik perun ulogovan.
+16-Jan-19 2:56:13 AM: Korisnik perun ulogovan.
+16-Jan-19 2:58:45 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 3:02:30 AM: Korisnik perun ulogovan.
+16-Jan-19 3:05:02 AM: Korisnik perun ulogovan.
+16-Jan-19 3:08:14 AM: Korisnik perun ulogovan.
+16-Jan-19 3:14:11 AM: Korisnik perun ulogovan.
+16-Jan-19 3:17:13 AM: Korisnik perun ulogovan.
+16-Jan-19 3:18:15 AM: Korisnik perun ulogovan.
+16-Jan-19 3:19:26 AM: Korisnik perun ulogovan.
+16-Jan-19 3:20:23 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 3:56:37 AM: Korisnik perun ulogovan.
+16-Jan-19 4:16:23 AM: Korisnik perun ulogovan.
+16-Jan-19 4:18:38 AM: Korisnik perun ulogovan.
+16-Jan-19 4:20:32 AM: Korisnik perun ulogovan.
+16-Jan-19 4:22:01 AM: Korisnik perun ulogovan.
+16-Jan-19 4:23:47 AM: Korisnik perun ulogovan.
+16-Jan-19 4:25:14 AM: Korisnik perun ulogovan.
+16-Jan-19 4:27:50 AM: Pokusan login sa nepravilnim podacima, username: parun.
+16-Jan-19 4:27:59 AM: Korisnik perun ulogovan.
+16-Jan-19 4:32:36 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 4:33:17 AM: Uspesan upis korisnika perun.
+16-Jan-19 4:34:03 AM: Uspesan upis korisnika simeon.
+16-Jan-19 4:34:41 AM: Uspesan upis korisnika Sima.
+16-Jan-19 4:35:25 AM: Uspesan upis korisnika Sinisa.
+16-Jan-19 4:36:13 AM: Uspesan upis korisnika lozaVoza.
+16-Jan-19 4:36:46 AM: Uspesan upis korisnika Haruspex.
+16-Jan-19 4:37:59 AM: Uspesan upis korisnika TimTam.
+16-Jan-19 4:39:23 AM: Korisnik perun ulogovan.
+16-Jan-19 4:56:12 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 5:24:49 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:26:29 AM: Pokusan login sa nepravilnim podacima, username: Maro.
+16-Jan-19 5:26:31 AM: Pokusan login sa nepravilnim podacima, username: Maro.
+16-Jan-19 5:26:38 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:29:58 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:31:59 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:32:25 AM: Uspesan upis voznje.
+16-Jan-19 5:35:36 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:35:50 AM: Uspesan upis voznje.
+16-Jan-19 5:39:43 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:42:16 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:42:28 AM: Uspesan upis voznje.
+16-Jan-19 6:01:02 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:01:23 AM: Uspesan upis voznje.
+16-Jan-19 6:05:06 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:25:23 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:32:34 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:34:48 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:36:19 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:39:46 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:41:08 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:42:53 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:45:15 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:48:14 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:50:46 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:54:15 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:54:28 AM: Uspesan upis voznje.
+16-Jan-19 7:07:46 AM: Korisnik Maro ulogovan.
+16-Jan-19 7:08:39 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 7:09:26 AM: Uspesan upis voznje.
+16-Jan-19 7:10:11 AM: Korisnik perun ulogovan.
+16-Jan-19 7:12:28 AM: Korisnik perun ulogovan.
+16-Jan-19 7:12:58 AM: Uspesan upis voznje.

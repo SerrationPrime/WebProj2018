@@ -27,6 +27,10 @@ namespace TaxiService.Controllers
             {
                 case ("Musterija"):
                     return Redirect("/Musterija");
+                case ("Dispecer"):
+                    return Redirect("/Dispecer");
+                case ("Vozac"):
+                    return Redirect("/Vozac");
                 default:
                     break;
             }
@@ -39,6 +43,58 @@ namespace TaxiService.Controllers
 
         public ActionResult Musterija()
         {
+            if (ValidAuth("Musterija"))
+            {
+                return View("Index");
+            }
+            else
+            {
+                return Redirect("/");
+            }
+        }
+
+        public ActionResult Vozac()
+        {
+            if (ValidAuth("Vozac"))
+            {
+                return View("Index");
+            }
+            else
+            {
+                return Redirect("/");
+            }
+        }
+
+        public ActionResult Dispecer()
+        {
+            if (ValidAuth("Dispecer"))
+            {
+                return View("Index");
+            }
+            else
+            {
+                return Redirect("/");
+            }
+        }
+
+        public ActionResult MusterijaTemplate()
+        {
+            return View();
+        }
+
+        public ActionResult DispecerTemplate()
+        {
+            return View();
+        }
+
+        public ActionResult VozacTemplate()
+        {
+            return View();
+        }
+
+        public bool ValidAuth(string uloga)
+        {
+            //Kontrola potrebna u slucaju da neko ukuca URL direktno u adresu
             string sessionId;
             try
             {
@@ -46,18 +102,13 @@ namespace TaxiService.Controllers
             }
             catch
             {
-                return Redirect("/");
+                return false;
             }
-            if (LoginController.Autorizacija(sessionId) != "Musterija")
+            if (LoginController.Autorizacija(sessionId) != uloga)
             {
-                return Redirect("/");
+                return false;
             }
-            return View("Index");
-        }
-
-        public ActionResult MusterijaTemplate()
-        {
-            return View();
-        }
+            return true;
+    }
     }
 }

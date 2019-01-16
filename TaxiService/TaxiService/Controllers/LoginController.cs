@@ -18,29 +18,30 @@ namespace TaxiService.Controllers
 
     public class LoginController : ApiController
     {
-        static Dictionary<string, string> ActiveSessions = new Dictionary<string, string>();
+        public static Dictionary<string, CookiePomoc> ActiveSessions = new Dictionary<string, CookiePomoc>();
 
         [HttpPost]
         public IHttpActionResult Post(UserPass credentials)
         {
             Random rnd = new Random();
             var RandVal = rnd.Next(0, int.MaxValue).ToString();
+            var Resp = new HttpResponseMessage();
 
-            switch (TekstSkladiste.Autentikacija(credentials.Username, credentials.Password)){
-                case ("Musterija"):
-                    ActiveSessions.Add(RandVal, "Musterija");
-                    break;
-                case ("Vozac"):
-                    ActiveSessions.Add(RandVal, "Vozac");
-                    break;
-                case ("Dispecer"):
-                    ActiveSessions.Add(RandVal, "Dispecer");
-                    break;
-                default:
+            var Podaci = TekstSkladiste. Autentikacija(credentials.Username, credentials.Password);
+
+            switch (Podaci.Uloga) {
+                case ("Blokiran"):
+                    TekstSkladiste.LogUpisi("Pokusan login blokiranog korisnika, username: " + credentials.Username + ".");
+                    Resp = Request.CreateErrorResponse(HttpStatusCode.Forbidden, "Blokirani ste, i ne mozete korisiti ovaj web sajt.");
+                    return ResponseMessage(Resp);
+                case("Nepoznat"):
                     TekstSkladiste.LogUpisi("Pokusan login sa nepravilnim podacima, username: " + credentials.Username + ".");
                     return Unauthorized();
+                default:
+                    ActiveSessions.Add(RandVal, Podaci);
+                    break;
             }
-            var Resp = new HttpResponseMessage();
+            
             Resp.StatusCode = HttpStatusCode.OK;
             var Cookie = new CookieHeaderValue("session-id", RandVal);
             Cookie.Path = "/";
@@ -57,7 +58,7 @@ namespace TaxiService.Controllers
         {
             if (ActiveSessions.ContainsKey(cookie))
             {
-                return ActiveSessions[cookie];
+                return ActiveSessions[cookie].Uloga;
             }
             else
             {
