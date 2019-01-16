@@ -132,7 +132,8 @@ app.controller('PutFormController', function ($scope, $http) {
             else {
                 $scope.stanjeVozaca = "";
             }
-        });
+            });
+
 
     };
 
@@ -164,6 +165,7 @@ app.controller('PutFormController', function ($scope, $http) {
 
 app.controller('BlockFormController', function ($scope, $http) {
     $scope.flipBlock = function () {
+        $scope.errorName = "";
         if ($scope.username === "") {
             $scope.errorName = "Niste uneli korisnicko ime.";
         }
@@ -171,7 +173,7 @@ app.controller('BlockFormController', function ($scope, $http) {
             $http({
                 method: 'POST',
                 url: 'api/Control/',
-                data: $scope.username,
+                params: { username: $scope.username },
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
             }).then(function successCallback(response) {
                 $scope.errorName = "Korisnik uspesno blokiran/odblokiran!";
@@ -179,5 +181,35 @@ app.controller('BlockFormController', function ($scope, $http) {
                 $scope.errorName = "Korisnik ne postoji, ili postoji problem na serveru.";
             });
         }
+    };
+});
+
+app.controller('NeobradjeneController', function ($scope, $http) {
+    $scope.lista = [];
+    $scope.filteri = [
+        { model: "komentar.ocena" },
+        { model: "datum" },
+        { model: "iznos" },
+        { model: "status" }
+    ];
+    $scope.tipFiltera = "komentar.ocena";
+
+    $scope.refresh = function () {
+        $http({
+            url: "api/Voznja",
+            method: "GET",
+        }).then(function (response) {
+            $scope.lista = response.data;
+            $scope.sortType = $scope.tipFiltera;
+            $scope.sortReverse = false;
+            $scope.search = '';
+            if ($scope.lista === []) {
+                $scope.stanjeVoznji = "Nema slobodnih voznji!";
+            }
+            else {
+                $scope.stanjeVoznji = "";
+            }
+        });
+
     };
 });

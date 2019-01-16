@@ -19,6 +19,10 @@
     <h1>Dobrodosli, dispeceru.</h1>
 
     <button ng-click="vozacKreacija = !vozacKreacija">Kreirajte vozaca</button>
+
+    <button ng-click="voznjaKreacija = !voznjaKreacija">Kreirajte voznju</button>
+    <button ng-click="neobradjeneVoznje = !neobradjeneVoznje">Neobrađene vožnje</button>
+    <button ng-click="blokada = !blokada">Blokiranje korisnika</button>
     <div ng-show="vozacKreacija" ng-controller="VozFormController">
         <form ng-submit="processForm()">
             <p>
@@ -75,7 +79,6 @@
             </pre>
         </form>
     </div>
-    <button ng-click="voznjaKreacija = !voznjaKreacija">Kreirajte voznju</button>
     <div ng-show="voznjaKreacija" ng-controller="PutFormController">
         <form ng-submit="processForm()">
             <p>
@@ -96,7 +99,7 @@
             </p>
             <p>
                 Željeni tip automobila<br />
-                <select id="zeljeniTip" ng-model="formData.zeljeniTip" required>
+                <select id="zeljeniTip" ng-model="formData.zeljeniTip">
                     <option value="1" selected="selected">Putnicki</option>
                     <option value="2">Kombi</option>
                 </select>
@@ -158,8 +161,6 @@
             </pre>
         </form>
     </div>
-    <button ng-click="neobradjeneVoznje = !neobradjeneVoznje"></button>
-    <button ng-click="blokada = !blokada">Blokiranje korisnika</button>
     <div ng-show="blokada" ng-controller="BlockFormController">
         <p>
             <input type="text" id="adresa" ng-model="username" required>
@@ -168,6 +169,122 @@
             <button type="submit" ng-click="flipBlock()">Blokiraj/Odblokiraj</button>
         </p>
         {{errorName}}
+    </div>
+    <div ng-show="neobradjeneVoznje" ng-controller="NeobradjeneController">
+        <p>
+            <div class="input-group">
+                <div><i class="fa fa-search"></i></div>
+                <input type="text" placeholder="Nađite voznju" ng-model="search">
+                <select ng-model="tipFiltera">
+                    <option ng-repeat="x in filteri" value="{{x.model}}">{{x.model}}</option>
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>
+                            <a href="#" ng-click="sortType = 'vreme'; sortReverse = !sortReverse">
+                                Vreme
+                                <span ng-show="sortType == 'vreme' && !sortReverse"></span>
+                                <span ng-show="sortType == 'vreme' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" ng-click="sortType = 'lokacija.adresa'; sortReverse = !sortReverse">
+                                Adresa klijenta
+                                <span ng-show="sortType == 'lokacija.adresa' && !sortReverse"></span>
+                                <span ng-show="sortType == 'lokacija.adresa' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" ng-click="sortType = 'zeljeniTip'; sortReverse = !sortReverse">
+                                Zeljeni tip vozila
+                                <span ng-show="sortType == 'zeljeniTip' && !sortReverse"></span>
+                                <span ng-show="sortType == 'zeljeniTip' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" ng-click="sortType = 'odrediste.adresa'; sortReverse = !sortReverse">
+                                Odredište
+                                <span ng-show="sortType == 'odrediste.adresa' && !sortReverse"></span>
+                                <span ng-show="sortType == 'odrediste.adresa' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" ng-click="sortType = 'dispecerUsername'; sortReverse = !sortReverse">
+                                Dispečer
+                                <span ng-show="sortType == 'dispecerUsername' && !sortReverse"></span>
+                                <span ng-show="sortType == 'dispecerUsername' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" ng-click="sortType = 'vozacUsername'; sortReverse = !sortReverse">
+                                Vozač
+                                <span ng-show="sortType == 'vozacUsername' && !sortReverse"></span>
+                                <span ng-show="sortType == 'vozacUsername' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" ng-click="sortType = 'iznos'; sortReverse = !sortReverse">
+                                Iznos
+                                <span ng-show="sortType == 'iznos' && !sortReverse"></span>
+                                <span ng-show="sortType == 'iznos' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" ng-click="sortType = 'status'; sortReverse = !sortReverse">
+                                Status
+                                <span ng-show="sortType == 'status' && !sortReverse"></span>
+                                <span ng-show="sortType == 'status' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" ng-click="sortType = 'komentar.opis'; sortReverse = !sortReverse">
+                                Komentar
+                                <span ng-show="sortType == 'komentar.opis' && !sortReverse"></span>
+                                <span ng-show="sortType == 'komentar.opis' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" ng-click="sortType = 'komentar.ocena'; sortReverse = !sortReverse">
+                                Ocena
+                                <span ng-show="sortType == 'komentar.ocena' && !sortReverse"></span>
+                                <span ng-show="sortType == 'komentar.ocena' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" ng-click="sortType = 'komentar.username'; sortReverse = !sortReverse">
+                                Komentator
+                                <span ng-show="sortType == 'komentar.username' && !sortReverse"></span>
+                                <span ng-show="sortType == 'komentar.username' && sortReverse"></span>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="voznja in lista | orderBy:sortType:sortReverse | filter:search">
+                        <td>{{ voznja.vreme }}</td>
+                        <td>{{ voznja.lokacija.adresa }}</td>
+                        <td>{{ voznja.zeljeniTip }}</td>
+                        <td>{{ voznja.odrediste.adresa }}</td>
+                        <td>{{ voznja.dispecerUsername }}</td>
+                        <td>{{ voznja.vozacUsername }}</td>
+                        <td>{{ voznja.iznos }}</td>
+                        <td>{{ voznja.status }}</td>
+                        <td>{{ voznja.komentar.username }}</td>
+                        <td>{{ voznja.komentar.opis }}</td>
+                        <td>{{ voznja.komentar.ocena }}</td>
+                        <td><button class="button" ng-click="stanjePlus(voznja)">Prihvati/Zavrsi</button></td>
+                        <td><button class="vutton" ng-click="stanjeMinus(voznja)">Ponisti</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        <p>
+            <button type="button" ng-click="refresh()">Osvezi listu</button>
+            {{errorName}}
+        </p>
     </div>
 </body>
 

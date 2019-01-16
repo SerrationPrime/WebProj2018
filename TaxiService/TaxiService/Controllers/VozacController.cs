@@ -41,5 +41,43 @@ namespace TaxiService.Controllers
         {
             return TekstSkladiste.PronadjiNajblizeVozace(lat, lng);
         }
+        [HttpGet]
+        public Vozac Get()
+        {
+            var retList = new List<Voznja>();
+
+            string sessionId;
+            var cookie = Request.Headers.GetCookies("session-id").FirstOrDefault();
+            if (cookie != null)
+            {
+                sessionId = cookie["session-id"].Value;
+            }
+            else
+            {
+                return null;
+            }
+            CookiePomoc miniCookie;
+            if (LoginController.ActiveSessions.ContainsKey(sessionId))
+            {
+                miniCookie = LoginController.ActiveSessions[sessionId];
+            }
+            else
+            {
+                return null;
+            }
+
+            switch (miniCookie.Uloga)
+            {
+                case ("Dispecer"):
+                    return TekstSkladiste.PronadjiVozaca(miniCookie.Username);
+                    break;
+                case ("Vozac"):
+                    return TekstSkladiste.PronadjiVozaca(miniCookie.Username);
+                    break;
+                default:
+                    return null;
+            }
+
+        }
     }
 }

@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace TaxiService.Models
 {
-    public enum StatusVoznje { Ceka, Formirana, Obradjena, Prihvacena, Otkazana, Neuspesna, Uspesna}
+    public enum StatusVoznje { Kreirana, Formirana, Obradjena, Prihvacena, Otkazana, Neuspesna, Uspesna}
 
     public class Voznja
     {
@@ -18,7 +15,7 @@ namespace TaxiService.Models
         public string DispecerUsername { get; set;}
         public string VozacUsername { get; set; }
         public double Iznos { get; set; }
-        public DateTime KomentarVreme { get; set; }
+        public Komentar Komentar { get; set; }
         public StatusVoznje Status { get; set; }
 
         public Voznja()

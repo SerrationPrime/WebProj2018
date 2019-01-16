@@ -135,3 +135,81 @@
 15-Jan-19 11:59:38 PM: Pokusan login sa nepravilnim podacima, username: Harbinger.
 15-Jan-19 11:59:41 PM: Korisnik Harbinger ulogovan.
 16-Jan-19 12:07:02 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 12:38:13 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 12:39:44 AM: Pokusan login sa nepravilnim podacima, username: Harbinger.
+16-Jan-19 12:39:46 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:15:05 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:16:57 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:19:49 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:36:07 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:40:16 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 1:43:13 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 2:15:19 AM: Korisnik perun ulogovan.
+16-Jan-19 2:17:35 AM: Korisnik perun ulogovan.
+16-Jan-19 2:19:52 AM: Korisnik perun ulogovan.
+16-Jan-19 2:22:58 AM: Korisnik perun ulogovan.
+16-Jan-19 2:24:10 AM: Korisnik perun ulogovan.
+16-Jan-19 2:26:39 AM: Korisnik perun ulogovan.
+16-Jan-19 2:54:25 AM: Korisnik perun ulogovan.
+16-Jan-19 2:56:13 AM: Korisnik perun ulogovan.
+16-Jan-19 2:58:45 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 3:02:30 AM: Korisnik perun ulogovan.
+16-Jan-19 3:05:02 AM: Korisnik perun ulogovan.
+16-Jan-19 3:08:14 AM: Korisnik perun ulogovan.
+16-Jan-19 3:14:11 AM: Korisnik perun ulogovan.
+16-Jan-19 3:17:13 AM: Korisnik perun ulogovan.
+16-Jan-19 3:18:15 AM: Korisnik perun ulogovan.
+16-Jan-19 3:19:26 AM: Korisnik perun ulogovan.
+16-Jan-19 3:20:23 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 3:56:37 AM: Korisnik perun ulogovan.
+16-Jan-19 4:16:23 AM: Korisnik perun ulogovan.
+16-Jan-19 4:18:38 AM: Korisnik perun ulogovan.
+16-Jan-19 4:20:32 AM: Korisnik perun ulogovan.
+16-Jan-19 4:22:01 AM: Korisnik perun ulogovan.
+16-Jan-19 4:23:47 AM: Korisnik perun ulogovan.
+16-Jan-19 4:25:14 AM: Korisnik perun ulogovan.
+16-Jan-19 4:27:50 AM: Pokusan login sa nepravilnim podacima, username: parun.
+16-Jan-19 4:27:59 AM: Korisnik perun ulogovan.
+16-Jan-19 4:32:36 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 4:33:17 AM: Uspesan upis korisnika perun.
+16-Jan-19 4:34:03 AM: Uspesan upis korisnika simeon.
+16-Jan-19 4:34:41 AM: Uspesan upis korisnika Sima.
+16-Jan-19 4:35:25 AM: Uspesan upis korisnika Sinisa.
+16-Jan-19 4:36:13 AM: Uspesan upis korisnika lozaVoza.
+16-Jan-19 4:36:46 AM: Uspesan upis korisnika Haruspex.
+16-Jan-19 4:37:59 AM: Uspesan upis korisnika TimTam.
+16-Jan-19 4:39:23 AM: Korisnik perun ulogovan.
+16-Jan-19 4:56:12 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 5:24:49 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:26:29 AM: Pokusan login sa nepravilnim podacima, username: Maro.
+16-Jan-19 5:26:31 AM: Pokusan login sa nepravilnim podacima, username: Maro.
+16-Jan-19 5:26:38 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:29:58 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:31:59 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:32:25 AM: Uspesan upis voznje.
+16-Jan-19 5:35:36 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:35:50 AM: Uspesan upis voznje.
+16-Jan-19 5:39:43 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:42:16 AM: Korisnik Maro ulogovan.
+16-Jan-19 5:42:28 AM: Uspesan upis voznje.
+16-Jan-19 6:01:02 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:01:23 AM: Uspesan upis voznje.
+16-Jan-19 6:05:06 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:25:23 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:32:34 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:34:48 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:36:19 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:39:46 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:41:08 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:42:53 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:45:15 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:48:14 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:50:46 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:54:15 AM: Korisnik Maro ulogovan.
+16-Jan-19 6:54:28 AM: Uspesan upis voznje.
+16-Jan-19 7:07:46 AM: Korisnik Maro ulogovan.
+16-Jan-19 7:08:39 AM: Korisnik Harbinger ulogovan.
+16-Jan-19 7:09:26 AM: Uspesan upis voznje.
+16-Jan-19 7:10:11 AM: Korisnik perun ulogovan.
+16-Jan-19 7:12:28 AM: Korisnik perun ulogovan.
+16-Jan-19 7:12:58 AM: Uspesan upis voznje.

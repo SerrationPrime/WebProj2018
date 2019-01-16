@@ -11,9 +11,7 @@ namespace TaxiService.Models
     public class Komentar
     {
         public string Opis { get; set; }
-        public DateTime Datum { get; set; }
-        public string KorisnikUsername { get; set; }
-        public string VoznjaID { get; set; }
+        public string Username { get; set; }
         public Ocena Ocena { get; set; }
     }
 }

@@ -9,7 +9,6 @@ namespace TaxiService.Controllers
 {
     public class ControlController : ApiController
     {
-        // Post: Control
         [HttpPost]
         public IHttpActionResult Post(string username)
         {

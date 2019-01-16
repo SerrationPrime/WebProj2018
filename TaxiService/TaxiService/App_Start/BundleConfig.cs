@@ -28,7 +28,9 @@ namespace TaxiService
                       "~/Scripts/angular.min.js",
                       "~/Scripts/angular-route.min.js",
                       "~/Scripts/app.js",
-                      "~/Scripts/dispecer.js"));
+                      "~/Scripts/dispecer.js",
+                      "~/Scripts/vozac.js",
+                      "~/Scripts/musterija.js"));
         }
     }
 }

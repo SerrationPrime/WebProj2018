@@ -188,12 +188,14 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\ControlController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KomentarController.cs" />
     <Compile Include="Controllers\KontaktController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\TaxiController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\VozacController.cs" />
+    <Compile Include="Controllers\VozacEditController.cs" />
     <Compile Include="Controllers\VoznjaController.cs" />
+    <Compile Include="Controllers\VoznjaEditController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -252,9 +254,11 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\musterija.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\vozac.js" />
     <Content Include="Views\Home\DispecerTemplate.cshtml" />
     <None Include="Views\Home\HomeTemplate.cshtml" />
     <Content Include="Web.config" />
